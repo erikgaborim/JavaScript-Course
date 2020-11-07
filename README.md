@@ -1,2 +1,2 @@
 # JavaScript Course
- Code done on the Gustavo Guanabara's Java Script Course
+ Code done in the Gustavo Guanabara's Java Script Course
