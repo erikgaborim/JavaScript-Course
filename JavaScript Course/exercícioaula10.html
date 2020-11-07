@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chegadesaudade</title>
+    <style>
+        div#es{
+            font: normal 20pt Arial;
+            background:rgb(158, 22, 22);
+            color: white;
+            width: 500px;
+            height: 500px;
+            line-height: 500px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="es" onclick="clicar()" onmouseenter = "passar()" onmouseout="mostrar()">
+        Interaja...
+    </div>
+</body>
+<script>
+    function clicar(){
+        var gt = window.document.getElementById('es')
+        gt.innerHTML = 'Palmeiras não tem mundial'
+        gt.style.background = "green"
+    }
+    function passar(){
+        var pss = document.getElementById('es')
+        pss.innerText = 'Vai clicar ou não meu parsero?!?!'
+        pss.style.background = 'black'
+    }
+    var mostra = document.getElementById('es')
+    mostra.addEventListener('mouseout', mostrae)
+    function mostrae(){
+        mostra.innerText = 'Qual foi fi?'
+    }
+    /*function mostrar(){
+        var es = document.getElementById('es')
+        es.innerText = 'Es'
+        es.style.background = 'gold'
+    }*/
+</script>
+</html>

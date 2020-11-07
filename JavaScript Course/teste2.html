@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>voufzrumteste</title>
+</head>
+<style>
+    body{
+        background-color: rgb(114, 114, 197);
+        color: black;
+        width: 2000px;
+        height: 200px;
+        font: 18pt Arial;
+        line-height: 20px;
+    }
+    input{
+        font: 18pt Arial
+    }
+</style>
+<body>
+    <h1>Digite seu nome</h1>
+    <input type="text" name="texto" id="texto">
+    <input type="button" value="confirmar" onclick="clicar()">
+    <div id="nomeid"></div>
+</body>
+<script>
+    function clicar(){
+        var nome = document.getElementById('texto')
+        var transf1 = String(nome.value)
+        var txt = document.getElementById('nomeid')
+        txt.innerText= 'Olá, ' + transf1
+    }
+</script>
+</html>

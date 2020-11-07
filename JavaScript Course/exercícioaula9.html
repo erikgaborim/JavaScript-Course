@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudando o DOM</title>
+</head>
+    <style>
+        body{
+            background-color: black;
+            color: red;
+            font: normal 18pt Arial;
+        }
+    </style>
+<body>
+    <h1 class = es>Vamo ve, né habib és</h1>
+    <p>eae meu parsero</p>
+    <p>To aprendendo <strong>DOM</strong> meu parsero</p>
+    <div id="mensg">clique em mim</div>
+</body>
+<script>
+    window.document.write(window.document.URL)
+    var p1 = window.document.getElementsByTagName('p')[1]
+    var corpo = window.document.body
+    window.document.write("<br/>Está escrito: " + p1.innerHTML)
+    p1.style.color = 'blue'
+    corpo.style.background = 'yellow'
+    window.alert(p1.innerText)
+    var d = window.document.getElementById('mensg')
+    d.style.color = 'black'
+    //d.innerText = "Qual foi meu parsero???"
+    var n = window.document.querySelector('div#mensg')
+    n.style.background = "red"
+    var x = window.document.querySelector('h1.es')
+    x.style.background = "gray"
+    var habib = window.document.getElementsByTagName('p')[0]
+    habib.style.color = "blue"
+    window.document.write("<br/>O primeiro parágrafo diz: " + habib.innerHTML)
+</script>
+</html>

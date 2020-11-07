@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>condicional</title>
+</head>
+<body>
+    <h1>Dizae meu bom</h1>
+    Digitae seu país: <input type="text" name="texto" id="texto">
+    <input type="button" value="conferir" onclick="clicar()">
+    <div id="es"></div>
+</body>
+<script>
+    function clicar(){
+        var nac = document.querySelector('input#texto')
+        var nomeid = document.querySelector('div#es')
+        var transf = String(nac.value)
+        if(transf == 'Brasil'){
+            nomeid.innerHTML = 'Você é sangue bao meu parsero'
+        }else{
+            nomeid.innerHTML = 'You is gringo'
+        }
+    }
+</script>
+</html>

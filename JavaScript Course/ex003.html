@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>és</title>
+    <style>
+    body{
+        background-color: black;
+        color: white;
+        font: normal 10pt Arial;
+    }
+    h1 {
+        color: yellow;
+    }
+    </style>
+</head>
+<body>
+    <h1>parabens</h1>
+    <h2>você acertou</h2>
+    <p>gostou da minha página??</p>
+    <button >
+        <a href="https://www.youtube.com/watch?v=OmmJBfcMJA8">assiste aí</a>
+    </button>
+    <script>
+        //var num = window.prompt('digite um numero: ')no comando 'windows.prompt' o valor digitado sempre será considerado string, mesmo ele sendo um numero
+        var num = Number.parseInt(window.prompt('digite um numero: '))//para resolver o problema acima, usamos o comando 'Number.parseInt' ou 'Number.parseFloat'
+        var num2 = Number.parseInt(window.prompt('digite outro numero: '))
+        var soma = num + num2
+        window.alert(`A soma de ${num} e ${num2} é: ` + soma)//concatenação '+'; perceba que a mensagem está entre crases
+  </script>
+</body>
+</html>

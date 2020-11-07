@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>testando</title>
+</head>
+<body>
+    <h1>Algum Título</h1>
+    <input type="number" name="numero" id="numero">
+    <input type="button" value="mostra o numero" onclick="clicar()">
+    <div id="nomediv"></div>
+</body>
+<script>
+    function clicar(){
+        var transf1 = document.getElementById('numero')
+        var n = Number(transf1.value)
+        var chamae = document.getElementById('nomediv')
+        chamae.innerText = n
+    }
+</script>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula11</title>
+</head>
+<body>
+   <h1>Sistema de multas</h1>
+    Digite a velocidade do carro: <input type="number" name="numclass" id="numid"> Km/h
+    <input type="button" value="verificar" onclick="clicar()">
+    <div id="res"></div>
+</body>
+<script>
+    function clicar(){
+        var vel = document.querySelector('input#numid')
+        var transf = Number(vel.value)
+        var nid = document.querySelector('div#res')
+        nid.innerHTML = `<p>Sua velocidade atual é de <strong>${transf} Km/h</strong></p>`
+       
+        if(transf > 60){
+            nid.innerHTML += `<p>Você escedeu a velocidade máxima! <strong>MULTADO!</strong></p>`
+        }
+     nid.innerHTML += `<p>Dirija com segurança</p>`
+     }
+</script>
+</html>

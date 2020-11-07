@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vaiminhatristeza</title>
+</head>
+    <style>
+        body{
+            font: normal 18pt Arial;
+        }
+        input{
+            font: normal 18pt Arial;
+            width: 100pt;
+        }
+        div#habib{
+            margin-top: 20px;
+        }
+    </style>
+<body>
+    <h1>Vamo multiplicaae, né</h1>
+    <input type="number" name="valor1" id="num1"> x 
+    <input type="number" name="valor2" id="num2">
+    <input type="button" value="multiplicar" onclick = "multiplicar()">
+    <div id="habib"></div>
+</body>
+<script>
+    function multiplicar(){
+        var fina1 = document.getElementById('num1')
+        var fina2 = document.querySelector('input#num2')
+        var n1 = Number(fina1.value)
+        var n2 = Number(fina2.value)
+        var mult = n1 * n2
+        var chfun = document.getElementById('habib')
+        chfun.innerText = `A multiplicação entre ${n1} e ${n2} é: ${mult}`
+    }
+</script>
+</html>

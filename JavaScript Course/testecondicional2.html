@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quisnuncateperder</title>
+</head>
+<body>
+    <h1>Eae piazada</h1>
+    Digite sua idade: <input type="number" name="numprim" id="numprim">
+    <input type="button" value="conferir" onclick="clicar()">
+    <div id="habib"></div>
+</body>
+<script>
+    function clicar(){
+        var num = document.querySelector('input#numprim')
+        var transf = Number(num.value)
+        var apdiv = document.querySelector('div#habib')
+        if (transf < 16){
+            apdiv.innerHTML = 'Não pode votar!'
+        }else if(transf < 18 || transf >= 65){
+            apdiv.innerHTML = 'Voto optativo!'
+        }else{
+            apdiv.innerHTML = 'Voto obrigatório!'
+        }
+    }
+</script>
+</html>

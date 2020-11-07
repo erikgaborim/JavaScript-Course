@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br"
+<head>
+    <meta charset="UTF-8"
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>oba</title> 
+    <style>
+        body{
+            background-color: red;
+            color: white;
+            font: normal 20pt Arial;
+        }
+        h1{
+            color:black
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá</h1>
+    <p> Salmão é bao</p>
+</body>
+<script>
+    var salario = 1500
+    var nome = (window.prompt("Digite seu nome: "))
+    document.write(nome + ", você tem talento pra engenharia<br/>")
+    document.write(`você, <strong>${nome.toUpperCase()}</strong>, é feio que DÓI<br/>`)
+    document.write(`${nome} recebe ${salario.toLocaleString ('pt-BR', {style: 'currency', currency: 'BRL'})} `)
+</script>
+</html>
